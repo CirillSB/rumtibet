@@ -21,13 +21,21 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
-$fz-default:                        16px;
+//$fz-default:                        16px;
+$fz-default:                        14px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+$ff-bold:                           "NunitoSans Bold", "Arial", sans-serif;
+$ff-extrabold:                      "NunitoSans ExtraBold", "Arial", sans-serif;
+$ff-semibold:                       "NunitoSans SemiBold", "Arial", sans-serif;
+$ff-regular:                        "NunitoSans Regular", "Arial", sans-serif;
+$ff-light:                          "NunitoSans Light", "Arial", sans-serif;
+$ff-next:                           "Next Art", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -50,6 +58,8 @@ $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
+
+
 
 // Retina
 // ---------------------------------
