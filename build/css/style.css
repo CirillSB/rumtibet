@@ -449,9 +449,9 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
+  font-size: 0.7291666667vw;
+  line-height: 1.0416666667vw;
+  font-family: "NunitoSans Regular", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
