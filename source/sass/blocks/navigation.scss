@@ -1,0 +1,39 @@
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  // padding-right: 49px;
+}
+
+.navigation__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  // width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  // margin-right: 24px;
+  // &:last-child {
+  // 	margin-right: 0;
+  // }
+  padding: 0 size(12px);
+}
+
+.navigation__link {
+  color: $color-cod-gray;
+  font-family: $ff-semibold;
+  // font-size: 18px;
+  font-size: size(18px);
+  font-weight: 600;
+
+  // line-height: normal;
+  @include mobile {
+      // font-size: sz(120);
+  }
+}
