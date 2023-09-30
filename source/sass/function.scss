@@ -5,16 +5,3 @@
 @function size-mobile($size-in-px) {
   @return calc($size-in-px / $vp-390 * 100vw);
 }
-
-
-$min-size: 12;
-$max-size: 18;
-$min-viewport: 1200;
-$layout-width: 1600;
-
-@function sz($size) {
-  @return calc(($min-size * 1px) + ($max-size - $min-size) * (100vw - ($min-viewport * 1px)) / ($layout-width - $min-viewport));
-}
-
-
-

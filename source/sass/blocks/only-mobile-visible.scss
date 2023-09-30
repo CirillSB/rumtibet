@@ -1,0 +1,7 @@
+.only-mobile-visible {
+  display: none;
+
+  @include mobile {
+    display: inline-block;
+  }
+}

@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initMenu} from './modules/init-menu.js';
+import {testWebP} from './utils/test-webp.js';
 
 // ---------------------------------
 
@@ -10,10 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  testWebP();
   // Modules
   // ---------------------------------
-
+  initMenu();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

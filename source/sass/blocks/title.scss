@@ -1,0 +1,15 @@
+.title {
+  margin: 0;
+  padding-top: size(551px);
+  color: $color-cod-gray;
+  font-family: $ff-next;
+  font-size: size(50px);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: size(1px);
+
+  @include mobile {
+    padding-top: size-mobile(298px);
+    font-size: size-mobile(28px);
+  }
+}

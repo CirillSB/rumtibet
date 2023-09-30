@@ -12,6 +12,7 @@
 @import "function";
 @import "mixins";
 @import "global/fonts";
+@import "global/icon-fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
@@ -24,10 +25,17 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/only-desktop-visible";
+@import "blocks/only-mobile-visible";
 @import "blocks/main-header";
+@import "blocks/menu-button";
+@import "blocks/burger";
 @import "blocks/navigation";
 @import "blocks/logo";
 @import "blocks/main-link";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/overlay";
 
 // ---------------------------------
 

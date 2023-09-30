@@ -1,0 +1,5 @@
+.only-desktop-visible {
+  @include mobile {
+    display: none;
+  }
+}

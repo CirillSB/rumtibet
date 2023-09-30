@@ -12,13 +12,15 @@
 
 <body>
   <div class="wrapper">
+    <div class="overlay visually-hidden"></div>
     <header class="main-header">
       <div class="container">
         <div class="main-header__inner">
-          <svg class="logo" width="137" height="72">
+          <svg class="logo" width="137" height="72" viewBox="0 0 137 72">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
           <nav class="navigation">
+            
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#">
@@ -51,8 +53,16 @@
                 </a>
               </li>
             </ul>
+            <button class="menu-button visually-hidden">
+              <span class="visually-hidden">
+                Кнопка показать или скрыть меню
+              </span>
+              <svg class="burger" width="30" height="30" viewBox="0 0 30 30">
+                <use class="burger__image" xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+            </button>
           </nav>
-          <a class="main-link" href="#">
+          <a class="main-link only-desktop-visible" href="#">
             Консультация
           </a>
         </div>
@@ -60,15 +70,34 @@
     </header>
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <main>
-
+      <section class="promo">
+        <div class="container">
+          <h2 class="title">
+            Насладись<br class="only-mobile-visible"> прогулкой в&nbsp;<span class="only-desktop-visible">горах</span><span class="only-mobile-visible">горы</span><br class="only-mobile-visible">
+            с&nbsp;командой<br class="only-mobile-visible"> единомышленников
+          </h2>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container">
-        
       </div>
     </footer>
   </div>
   <!-- Модалки -->
+  <div class="modal modal--menu" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>

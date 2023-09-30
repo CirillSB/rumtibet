@@ -1,12 +1,19 @@
 .main-header {
-	background-color: transparent;
+  position: absolute;
+  top: size(16px);
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+
+  @include mobile {
+    top: size(20px);
+    overflow: hidden;
+    min-height: 100vh;
+  }
 }
 
 .main-header__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-// svg {
-// 	width: 222px;
-// }

@@ -1,5 +1,10 @@
 .logo {
-	flex-shrink: 0;
-	width: size(137px);
-	height: size(72px);
+  flex-shrink: 0;
+  width: size(137px);
+  height: size(72px);
+
+  @include mobile {
+    width: size-mobile(84px);
+    height: size-mobile(44px);
+  }
 }

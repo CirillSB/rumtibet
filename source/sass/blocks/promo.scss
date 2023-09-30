@@ -1,0 +1,38 @@
+.promo {
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webp-true .promo {
+  background-image: url("../img/background-desktop@1x.webp");
+
+  @include retina {
+    background-image: url("../img/background-desktop@2x.webp");
+  }
+
+  @include mobile {
+    background-image: url("../img/background-mobile@1x.webp");
+
+    @include retina {
+      background-image: url("../img/background-mobile@2x.webp");
+    }
+  }
+}
+
+.webp-false .promo {
+  background-image: url("../img/background-desktop@1x.jpg");
+
+  @include retina {
+    background-image: url("../img/background-desktop@2x.jpg");
+  }
+
+  @include mobile {
+    background-image: url("../img/background-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/background-mobile@2x.jpg");
+    }
+  }
+}
