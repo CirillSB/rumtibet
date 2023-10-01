@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/custom-select";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -28,14 +29,17 @@
 @import "blocks/only-desktop-visible";
 @import "blocks/only-mobile-visible";
 @import "blocks/main-header";
+@import "blocks/main-link";
+@import "blocks/main-form";
 @import "blocks/menu-button";
 @import "blocks/burger";
 @import "blocks/navigation";
 @import "blocks/logo";
-@import "blocks/main-link";
+
 @import "blocks/promo";
 @import "blocks/title";
 @import "blocks/overlay";
+
 
 // ---------------------------------
 

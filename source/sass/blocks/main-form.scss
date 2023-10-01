@@ -1,0 +1,69 @@
+.main-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: size(24px);
+  padding: size(40px) size(43px);
+  border-radius: size(10px);
+  background: rgba(255, 255, 255, 0.20);
+
+  select,
+  input {
+    padding: size(16px) size(13px);
+    width: 100%;
+    border-radius: size(8px);
+    border: size(1px) solid $color-Iron;
+    background-color: transparent;
+    color: $color-cod-gray;
+    font-family: $ff-bold;
+    font-size: size(16px);
+    font-weight: 700;
+    line-height: 150%;
+
+    &::placeholder {
+      color: red;
+      font-family: $ff-bold;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      /* 24px */
+    }
+  }
+
+  button {
+    padding: size(16px) size(36px);
+    background-color: $color-cod-gray;
+    border-radius: size(4px);
+    border: size(1px) solid $color-Iron;
+    color: $color-te-papa-green;
+    font-family: $ff-bold;
+    font-size: size(16px);
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: size(0.19px);
+  }
+
+  p {
+    margin: 0;
+    color: $color-cod-gray;
+    font-family: $ff-regular;
+    font-size: size(14px);
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.main-form__item {
+  display: grid;
+  gap: size(24px);
+  align-items: start;
+  grid-template-rows: auto;
+
+  &--inputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--buttons {
+    grid-template-columns: 100%;
+  }
+}
