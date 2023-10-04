@@ -4,7 +4,7 @@
   column-gap: size(24px);
   padding: size(40px) size(43px);
   border-radius: size(10px);
-  background: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.2);
 
   select,
   input {
@@ -18,29 +18,16 @@
     font-size: size(16px);
     font-weight: 700;
     line-height: 150%;
-
-    &::placeholder {
-      color: red;
-      font-family: $ff-bold;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 150%;
-      /* 24px */
-    }
   }
 
+  select {
+    appearance: none;
+  }
+
+  input,
   button {
     padding: size(16px) size(36px);
-    background-color: $color-cod-gray;
-    border-radius: size(4px);
-    border: size(1px) solid $color-Iron;
-    color: $color-te-papa-green;
-    font-family: $ff-bold;
     font-size: size(16px);
-    font-weight: 700;
-    line-height: 125%;
-    letter-spacing: size(0.19px);
   }
 
   p {

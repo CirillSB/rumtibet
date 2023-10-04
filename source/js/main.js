@@ -1,9 +1,21 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { initMenu } from './modules/init-menu.js';
-import { testWebP } from './utils/test-webp.js';
-import { CustomSelect } from './select/custom-select';
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+import {
+  initMenu
+} from './modules/init-menu.js';
+import {
+  testWebP
+} from './utils/test-webp.js';
+import {
+  getCustomSelect
+} from './custom-select/custom-select';
 
 // ---------------------------------
 
@@ -24,8 +36,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    const select = new CustomSelect();
-    select.init();
+    // const select = new CustomSelect();
+    // select.init();
+    getCustomSelect();
   });
 });
 
