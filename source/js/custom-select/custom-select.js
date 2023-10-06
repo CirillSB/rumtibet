@@ -4,16 +4,11 @@ export const getCustomSelect = () => {
   const location = document.querySelector('#location-select');
   const participants = document.querySelector('#participants-select');
   const PLACEHOLDER_LOCATION = 'Локация для тура';
-  const PLACEHOLDER_PARTICIPANTS = 'Участники'
+  const PLACEHOLDER_PARTICIPANTS = 'Участники';
   let currentSelect;
   let newOption;
   let placeholder;
-  // class CustomSelect {
-  //   constructor(select, option) {
-  //     this.select = select;
-  //     this.option = option;
-  //   }
-  // }
+
   const creatOptions = () => {
     for (let i = 0; i < selects.length; i++) {
       const creatNewOption = () => {
@@ -22,7 +17,7 @@ export const getCustomSelect = () => {
         newOption.classList.add('placeholder');
         selects[i].prepend(newOption);
         newOption.selected = true;
-      }
+      };
       if (selects[i] === location) {
         placeholder = PLACEHOLDER_LOCATION;
         creatNewOption();
@@ -44,6 +39,6 @@ export const getCustomSelect = () => {
         break;
       }
     }
-  }
+  };
   canvas.addEventListener('pointerdown', removeCurrentOption);
-}
+};

@@ -77,49 +77,53 @@
           </h2>
           <form class="main-form" action="#">
             <div class="main-form__item main-form__item--inputs">
-              <select class="custom-select" name="custom-select" id="location-select">
- <!--                <option value="placeholder" disabled selected>
-                  Локация для тура
-                </option> -->
-                <option value="1">
-                  Лысая гора
-                </option>
-                <option value="2">
-                  Ведьмина гора
-                </option>
-                <option value="3">
-                  Горбатая гора
-                </option>
-              </select>
-              <div class="input-fields__item">
-                <input type="date" name="date">
-                <p class="input-fields__label">
-                  укажите диапазон
-                </p>
+              <div class="main-form__input-field" data-placeholder>
+                <select class="custom-select" name="custom-select" id="location-select" data-source-element>
+                  <option value="1">
+                    Лысая гора
+                  </option>
+                  <option value="2">
+                    Ведьмина гора
+                  </option>
+                  <option value="3">
+                    Горбатая гора
+                  </option>
+                </select>
+                <label for="location-select">
+                  выберите из списка
+                </label>
               </div>
-              <select class="custom-select" name="custom-select" id="participants-select">
-<!--                 <option value="placeholder" disabled selected>
-                  Участники
-                </option> -->
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-              </select>
+              <div class="main-form__input-field" data-placeholder>
+                <input type="date" name="date" id="date-input" data-source-element>
+                <label for="date-input">
+                  укажите диапазон
+                </label>
+              </div>
+              <div class="main-form__input-field" data-placeholder>
+                <select class="custom-select" name="custom-select" id="participants-select" data-source-element>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                  <option value="6">
+                    6
+                  </option>
+                  <option value="7">
+                    7
+                  </option>
+                  <option value="8">
+                    8
+                  </option>
+                  <option value="9">
+                    9
+                  </option>
+                </select>
+                <label for="participants-select">
+                  укажите диапазон
+                </label>
+              </div>
             </div>
             <div class="main-form__item main-form__item--buttons">
               <button type="submit">

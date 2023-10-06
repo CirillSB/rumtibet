@@ -1,5 +1,5 @@
-import { createElement, renderElement } from './utils';
-import { createNativeSelectMarkup } from './create-select-markup';
+import {createElement, renderElement} from './utils';
+import {createNativeSelectMarkup} from './create-select-markup';
 
 export class CustomSelect {
   constructor() {
@@ -134,7 +134,7 @@ export class CustomSelect {
       const activeItem = parent.querySelector('.custom-select__item[aria-selected="true"]');
       if (element.getAttribute('aria-selected') === 'true') {
         this._closeSelect();
-        } else {
+      } else {
         if (activeItem) {
           activeItem.setAttribute('aria-selected', 'false');
           parent.classList.remove('not-empty');
@@ -150,7 +150,7 @@ export class CustomSelect {
     }
   }
 
-  _onDocumentClick({ target }) {
+  _onDocumentClick({target}) {
     if (!target.closest('.custom-select')) {
       this._closeSelect();
     }

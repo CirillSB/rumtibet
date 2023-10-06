@@ -8,7 +8,8 @@
 
   select,
   input {
-    padding: size(16px) size(13px);
+    margin: 0 0 size(8px);
+    padding: size(13px) size(13px);
     width: 100%;
     border-radius: size(8px);
     border: size(1px) solid $color-Iron;
@@ -20,24 +21,42 @@
     line-height: 150%;
   }
 
-  select {
-    appearance: none;
-  }
-
   input,
   button {
-    padding: size(16px) size(36px);
+    padding: size(12px) size(36px);
     font-size: size(16px);
   }
 
-  p {
+  button {
+    padding: size(16px) size(36px);
+    border: 0;
+    border-radius: size(4px);
+    background-color: $color-cod-gray;
+    color: #1a3e3e;
+    font-family: $ff-bold;
+    font-size: size(16px);
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: size(0.19px);
+  }
+
+  option {
+    background-color: $color-te-papa-green;
+  }
+
+  label {
     margin: 0;
+    padding: 0 0 0 size(8px);
     color: $color-cod-gray;
     font-family: $ff-regular;
     font-size: size(14px);
     font-weight: 400;
     line-height: 150%;
   }
+}
+
+.main-form__input-field {
+  position: relative;
 }
 
 .main-form__item {
