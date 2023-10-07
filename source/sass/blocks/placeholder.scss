@@ -1,12 +1,9 @@
 .placeholder {
-	position: absolute;
-	top: 0;
-	// transform: translateY(58%);
-	padding-left: size(16px);
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	// background-color: red;
-	// z-index: 100;
-	pointer-events: none;
+  position: absolute;
+  top: 0;
+  padding-left: size(16px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  pointer-events: none;
 }
