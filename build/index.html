@@ -78,7 +78,7 @@
           <form class="main-form" action="#">
             <div class="main-form__item main-form__item--inputs">
               <div class="main-form__input-field" data-placeholder>
-                <select class="custom-select" name="custom-select" id="location-select" data-form-field>
+                <select name="custom-select" id="location-select" data-form-field data-custom-fields>
                   <option value="1">
                     Лысая гора
                   </option>
@@ -94,13 +94,13 @@
                 </label>
               </div>
               <div class="main-form__input-field" data-placeholder>
-                <input type="date" name="date" id="date-input" data-form-field>
+                <input type="date" name="date" id="date-input" data-form-field data-custom-fields>
                 <label for="date-input">
                   укажите диапазон
                 </label>
               </div>
               <div class="main-form__input-field" data-placeholder>
-                <select class="custom-select" name="custom-select" id="participants-select" data-form-field>
+                <select class="custom-select" name="custom-select" id="participants-select" data-form-field data-custom-fields>
                   <option value="4">
                     4
                   </option>
@@ -179,6 +179,11 @@
       </div>
     </div>
   </div>
+  <template id="custom-icon">
+    <svg>
+      <use xlink:href="../img/sprite.svg#arrow-down"></use>
+    </svg>
+  </template>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

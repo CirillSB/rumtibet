@@ -1,0 +1,16 @@
+.custom-appearance {
+  appearance: none;
+  position: relative;
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 100000;
+  }
+}

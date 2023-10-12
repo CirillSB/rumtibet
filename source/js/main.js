@@ -15,7 +15,7 @@ import {
 } from './utils/test-webp.js';
 import {
   initFormFields
-} from './custom-select/init-form-fields';
+} from './native-options-markup/init-form-fields';
 // import {
 //   initFormFields
 // } from './custom-select/init-form-fields';

@@ -1336,6 +1336,27 @@ button,
   color: #15ab07;
 }
 
+.custom-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+.custom-appearance__icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 100000;
+}
+
 .only-mobile-visible {
   display: none;
 }

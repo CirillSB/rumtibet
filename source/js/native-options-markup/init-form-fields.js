@@ -2,7 +2,10 @@ import {
   PLACEHOLDER_LOCATION,
   PLACEHOLDER_DATE,
   PLACEHOLDER_PARTICIPANTS
-} from '../variables.js';
+} from './variables.js';
+import {
+  creatCustomAppearanceFields
+} from './custom-appearance-fields';
 
 export const initFormFields = () => {
   const canvas = document.querySelector('body');
@@ -63,4 +66,6 @@ export const initFormFields = () => {
     }
   };
   canvas.addEventListener('pointerdown', hidePlaceholder);
+  creatCustomAppearanceFields();
+  console.log('obj');
 };
