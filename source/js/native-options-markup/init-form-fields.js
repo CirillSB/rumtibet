@@ -67,5 +67,4 @@ export const initFormFields = () => {
   };
   canvas.addEventListener('pointerdown', hidePlaceholder);
   creatCustomAppearanceFields();
-  console.log('obj');
 };

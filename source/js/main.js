@@ -14,8 +14,11 @@ import {
   testWebP
 } from './utils/test-webp.js';
 import {
-  initFormFields
-} from './native-options-markup/init-form-fields';
+  setCustomAppearanceSelectFields
+} from './custom-appearance-select-fields/customAppearanceSelectFields';
+// import {
+//   initFormFields
+// } from './native-options-markup/init-form-fields';
 // import {
 //   initFormFields
 // } from './custom-select/init-form-fields';
@@ -46,7 +49,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // select.init();
     // getCustomSelect();
     // initPlaceholders();
-    initFormFields();
+    // initFormFields();
+    setCustomAppearanceSelectFields();
   });
 });
 

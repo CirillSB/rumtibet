@@ -824,6 +824,7 @@ button,
 .placeholder {
   position: absolute;
   top: 0;
+  left: 0;
   padding-left: 0.8333333333vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1353,8 +1354,6 @@ button,
   right: 0;
   width: 100px;
   height: 100px;
-  background-color: red;
-  z-index: 100000;
 }
 
 .only-mobile-visible {

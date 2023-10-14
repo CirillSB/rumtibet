@@ -1,6 +1,6 @@
 import {
   width,
-  height,
+  height
 } from './variables';
 
 export const creatCustomAppearanceFields = () => {
@@ -18,24 +18,19 @@ export const creatCustomAppearanceFields = () => {
 
   const svgSize = {
     width: `width: '${width}'`,
-    height: height,
-  }
+    height,
+  };
   const iconAddress = '../img/sprite.svg';
   const svgIcons = {
-  	arrowDown: 'arrow-down',
-  	star: 'star',
-  }
+    arrowDown: 'arrow-down',
+    star: 'star',
+  };
   const useAddress = 'xlink:href=' + `"${iconAddress}#${svgIcons.arrowDown}"`;
   const template = document.querySelector('#custom-icon');
   const customIconImage = template.content.cloneNode(true);
   const svg = customIconImage.querySelector('svg');
   const use = customIconImage.querySelector('use');
-  svg.classList.add('custom-appearance__icon')
-  // svg.prepend(svgSize.width);
+  svg.classList.add('custom-appearance__icon');
   use.append(useAddress);
-
   customIcon.append(customIconImage);
-  // console.log(use);
 };
-
-
