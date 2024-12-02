@@ -1,0 +1,17 @@
+.main-header {
+  // background-color: red;
+
+
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__button {
+  @include mobile {
+    display: none;
+  }
+}

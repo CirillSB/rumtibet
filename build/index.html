@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Описание проекта">
+  <title>RumTibet</title>
+  <link rel="stylesheet" href="assets/nouislider/nouislider.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="container main-header__container">
+        <div class="logo">
+          <svg class="logo__image" width="137" height="68">
+            <use xlink:href="img/sprite.svg#logo-desktop"></use>
+          </svg>
+        </div>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Про гида
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Программа тура
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Стоимость
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button main-header__button desktop-visible" type="button">
+          Консультация
+        </button>
+        <button class="burger-button mobile-visible" type="button">
+          <span class="visually-hidden">
+            Кнопка открытия и закрытия меню
+          </span>
+          <span class="burger-button__item"></span>
+        </button>
+        <!-- <label class="burger-button__label" for="burger-button"></label> -->
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">
+        Сайт туристического агенства RumTibet
+      </h1>
+      <section class="promo">
+        <div class="container">
+          <h2 class="main-title">
+            Насладись прогулкой в горах с командой единомышленников
+          </h2>
+          <form class="find-program" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
+            <ul class="find-program__list">
+              <li class="find-program__item">
+                <select class="find-program__select" name="location">
+                  <option class="find-program__option" value="#">
+                    Локация для тура
+                  </option>
+                  <option class="find-program__option" value="Кавказ">
+                    Кавказ
+                  </option>
+                  <option class="find-program__option" value="Алтай">
+                    Алтай
+                  </option>
+                  <option class="find-program__option" value="Саяны">
+                    Саяны
+                  </option>
+                </select>
+                <span class="find-program__label">
+                  выберите из списка
+                </span>
+              </li>
+              <li class="find-program__item">
+                <input class="find-program__date" type="date">
+                <span class="find-program__label">
+                  укажите диапазон
+                </span>
+              </li>
+              <li class="find-program__item">
+                <select class="find-program__select" name="location" id="location">
+                  <option class="find-program__option" value="#">
+                    Участники
+                  </option>
+                  <option class="find-program__option" value="4">
+                    4
+                  </option>
+                  <option class="find-program__option" value="5">
+                    5
+                  </option>
+                  <option class="find-program__option" value="6">
+                    6
+                  </option>
+                </select>
+                <span class="find-program__label">
+                  минимум 4 человека
+                </span>
+              </li>
+            </ul>
+            <button class="find-program__submit">
+              Найти программу
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+      </div>
+    </footer>
+  </div>
+  <!-- Модалки -->
+  <!-- <script src="assets/nouislider/nouislider.min.js"></script> -->
+  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

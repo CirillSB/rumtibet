@@ -1,0 +1,15 @@
+.container {
+  min-width: 1180px;
+  width: calc(1180 / 1920 * 100%);
+  max-width: 1920px;
+  margin: 0 auto;
+    @include tablet {
+      min-width: 760px;
+    width: calc(1100 / 1200 * 100%);
+  }
+
+    @include mobile {
+    min-width: 300px;
+  width: calc(760 / 768 * 100%);
+  }
+}

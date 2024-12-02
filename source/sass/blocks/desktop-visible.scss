@@ -1,0 +1,7 @@
+.desktop-visible {
+  display: blok;
+
+  @include tablet {
+    display: none;
+  }
+}
