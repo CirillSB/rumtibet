@@ -1,0 +1,55 @@
+.find-program {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.find-program__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 25px 0 0;
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+.find-program__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 25px;
+  width: 33%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.find-program__select {}
+
+.find-program__option {
+
+}
+
+.find-program__label {
+  color: $color-white;
+  line-height: 150%;
+}
+
+.find-program__date {}
+
+.find-program__submit {
+  padding: 16px;
+color: $color-te-papa-green;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.012em;
+border: none;
+border-radius: 4px;
+}
